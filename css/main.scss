@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+
+section{
+    height: 100vh;
+
+    &:nth-of-type(1){
+        display: grid;
+        place-items: center;
+    }
+
+    &:nth-of-type(2){
+        display: grid; 
+        align-content: center;
+        overflow: hidden;
+
+        ul {
+            list-style-type: none;
+            gap : 2em;
+            display: flex;
+
+            li{
+                width : 400px;
+                height: 400px;
+                background-color: lightpink;
+                border-radius: .3em;
+                cursor: grab;
+                display: grid;
+                place-items: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
